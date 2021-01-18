@@ -1,0 +1,493 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.center-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NAVIGATION SECTION */
+
+
+
+header .navButtons a {
+  margin-right: 25px;
+
+  font-weight: 500;
+  color: black;
+  border-right: 2px solid black;
+  padding-right: 25px;
+  letter-spacing: 3px;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.nav {
+  margin: 0 80px;
+}
+
+
+header .navButtons a:last-child {
+  border: none;
+}
+
+header .logo img {
+  max-height: 90px;
+  transition: 300ms;
+}
+
+/* HERO SECTON */
+
+.hero-sec {
+  margin-top: 106px;
+}
+
+.hero {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.5)), url("Pics/hero.jpg");
+  max-height: 521px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.hero-sec .container {
+  padding: 130px 0;
+}
+
+.hero-text p {
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.hero-text p:nth-of-type(1) {
+
+  color: rgb(255, 60, 0);
+}
+
+
+.hero-text p:nth-of-type(2) {
+  font-size: 2em;
+  color: rgb(243, 243, 239);
+}
+
+#hero-buttons a {
+  margin-top: 50px;
+  color: rgb(185, 185, 179);
+}
+
+
+
+/* ARTICLE YOU CREATE WE DO>>> */
+
+.para1 {
+  width: 75%;
+}
+
+.para1 p {
+  color: #585858;
+}
+
+.infoc {
+  min-height: 700px;
+
+}
+
+.infoc h1 {
+  text-align: center;
+  margin: 80px 0;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+
+
+
+/* CARUSELLE AND BANNERS SECTION */
+#id-carousele {
+
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+
+.carusele-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.5)), url("Pics/pexels-steve-johnson-1145720.jpg");
+  min-height: 505px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 20px;
+
+
+}
+
+
+.carusele-sec .banner {
+  padding: 25px;
+  background: rgba(128, 128, 128, 0.205);
+  width: 20%;
+}
+
+blockquote {
+  margin-top: 30px;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  color: #c2c0c0;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  border-radius: 50%;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+blockquote:before,
+blockquote:after {
+  display: block;
+  position: absolute;
+
+  color: #757575;
+  font-size: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+blockquote:before {
+  content: '“';
+  left: -10px;
+  top: -15px;
+}
+
+blockquote:after {
+  content: '”';
+  right: -3rem;
+  bottom: 0rem;
+}
+
+cite {
+  line-height: 3;
+  text-align: left;
+}
+
+
+
+
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.carousel-inner .carousel-item>div {
+  display: flex;
+  min-height: inherit;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(to top, #050505, 20%, rgba(255, 255, 255, 0.075));
+
+}
+
+.carousel-inner .carousel-item>div>div {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 270px;
+}
+
+.carousel-inner .carousel-item>div>div p {
+  font-size: 2em;
+  font-weight: 300;
+  color: #f7f0ee;
+  font-family: 'Roboto', cursive;
+  letter-spacing: 2px;
+
+}
+
+.carousel-inner .carousel-item>div>div p span {
+
+  color: #FF5722;
+
+}
+
+/* //FAQ SECTION */
+
+
+.faq-sec-title h2 {
+  text-align: center;
+  padding: 90px 0 50px;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.faq-sec {
+
+  background: rgb(245, 244, 242);
+}
+
+.faq-sec .container {
+  padding: 20px 0 80px;
+}
+
+.faq-div {
+  padding-right: 25px;
+}
+
+
+.faq-side-pic img {
+  max-height: 404px;
+}
+
+figcaption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+
+}
+
+/* GALLERY */
+
+
+figure {
+  margin: 0;
+}
+
+.gallery,
+.gallery2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8em;
+}
+
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+
+}
+
+.galery-title h2 {
+
+  padding: 60px 0 30px;
+
+  font-family: 'Nothing You Could Do', cursive;
+
+}
+
+#video-open {
+  display: none;
+}
+
+/* CONTACT */
+
+.contact-title {
+
+  padding: 80px 0 70px;
+  margin-top: 20px;
+
+  font-family: 'Nothing You Could Do', cursive;
+
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+  color: rgba(255, 255, 255, 0.678);
+}
+
+footer {
+  min-height: 200px;
+  background-color: rgb(151, 38, 4);
+  font-size: 0.9em;
+}
+
+.social-icons i {
+  color: rgba(255, 255, 255, 0.678);
+  font-size: 2em;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+#ifacebook:hover {
+  color: #4267B2;
+
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+
+}
+
+.fa-instagram:hover {
+  color: #833AB4;
+
+}
+
+
+@media screen and (max-width:930px) {
+
+
+  #id-carousele {
+
+    margin: 20px 0;
+    padding: 0;
+
+  }
+
+  .faq-div {
+    padding: 0;
+  }
+  .nav {
+    margin: 0 10px 0 18px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width:767px) {
+  header {
+    position: relative;
+    max-height: 70px;
+  }
+
+  header .navButtons a:nth-of-type(1) {
+
+    padding-top: 50px;
+  }
+
+  .nav {
+    margin: 0 20px;
+
+  }
+
+  .logo {
+    z-index: 991;
+
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.842);
+    top: 80px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 990;
+
+
+  }
+
+
+  header .navButtons a {
+    display: block;
+    padding: 16px 0;
+    margin: 5px 0;
+    border-right: none;
+  }
+
+
+  /* HERO SECTION */
+  .hero-sec .container {
+    padding-top: 70px;
+  }
+
+  .hero-text p:nth-of-type(1) {
+    font-size: 2.2em;
+  }
+
+
+  .hero-text p:nth-of-type(2) {
+    font-size: 1.5em;
+  }
+
+
+  #bars {
+    cursor: pointer;
+  }
+
+
+  #id-carousele {
+
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  #articleinfo img {
+
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .para1 {
+    margin: 30px auto;
+    padding: 20px;
+    background: #bdbdbd28;
+    width: 95%;
+  }
+
+  .infoc h1 {
+    margin: 30px 0;
+  }
+
+
+
+  /* ///FAQ SECTION */
+
+  .faq-div {
+    padding: 0px;
+
+  }
+
+  .faq-sec-title h2 {
+
+    padding: 90px 0 20px;
+
+  }
+
+  /* GALLERY */
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* FOOTER */
+  .social-icons {
+    padding: 20px 15px;
+  }
+
+
+  /* ///END OF MEDIA QUERIE */
+}

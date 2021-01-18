@@ -1,0 +1,40 @@
+.dark_window{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: rgba(0, 0, 0, 0.692);
+  /* מה יהיה העומק שלו מבחינת שכבות
+  ככל שהמספר גדול יותר ככה השכבה תיהיה עליונה יותר */
+  z-index:995;
+  /* display: flex; */
+  /* כי לא רוצים שיופיע בהתחלה */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark_box_inside{
+  width:100%;
+  max-width:603px;
+  background: rgb(226, 226, 226);
+  border-radius: 2px;
+  border:2px solid grey;
+  min-height: 500px;
+  padding: 10px 0 0;
+  margin-top: 50px;
+}
+
+.dark_box_inside img {
+width: 100%;
+max-height: 386px;
+padding:0 10px ;
+}
+.lower-div{
+  margin: 0 10px 10px 10px;
+}
+
+
+
+

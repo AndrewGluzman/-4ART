@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html id="top" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;500&family=Nothing+You+Could+Do&family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="dark.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>$4ART</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="json.js"></script>
+    <script src="app/ClassArtwork.js"></script>
+    <script src="app/appManager.js"></script>
+    <script src="app/eventsViewer.js"></script>
+    <script src="app/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="bg-white fixed-top">
+        <div
+          class="nav d-md-flex justify-content-between align-items-center p-1"
+        >
+          <div class="logo">
+            <a href="#top"
+              ><img id="id-logo" src="Pics/logo1.png" alt="logo"
+            /></a>
+          </div>
+          <nav class="navButtons d-md-block">
+            <a data-color="orange" href="#top">HOME</a>
+            <a data-color="blue" href="#gallery-sec-link">GALLERY</a>
+            <a
+              data-color="rgb(255, 60, 0)"
+              id="id-contact"
+              href="#contact-sec-link"
+              >CONTACT</a
+            >
+            <a data-color="purple" href="#faq-sec-link">FAQ</a>
+            <a data-color="green" id="about-button" href="#about-link">ABOUT</a>
+          </nav>
+          <div id="bars" class="d-md-none text-right py-3">
+            <i class="h3 fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="dark_window">
+        <div class="dark_box_inside">
+          <img id="id-dark-img" src="" alt="" />
+          <div
+            class="lower-div row d-flex justify-content-between bg-light p-2"
+          >
+            <div class="ml-3 p-2">
+              <h4 id="id-dark-author">Silvia Buceli</h4>
+              <p>
+                Name: <span id="id-dark-name">Sunrise</span> , Technique:
+                <span id="id-dark-techique">Oil on canvas</span>
+              </p>
+            </div>
+            <div class="mr-3 mt-1 pl-4">
+              <p>
+                Bid Price: <strong id="id-dark-price">3400</strong
+                ><strong>$</strong>
+              </p>
+              <p>
+                status:
+                <span id="id-dark-status"
+                  ><span class="badge badge-pill badge-success"
+                    >ON SALE</span
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        class="hero-sec container-fluid p-0 hero d-md-flex align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div class="hero-title hero-text mt-5">
+            <p>SELL YOUR ARTWORKS</p>
+            <p>TODAY</p>
+          </div>
+          <div
+            id="hero-buttons"
+            class="text-center justify-content-md-between mt-2"
+          >
+            <a
+              data-color="white"
+              id="btn-iam-in"
+              class="mr-2 btn"
+              href="#contact-sec-link"
+              >I AM IN</a
+            >
+            <a
+              data-color="white"
+              id="btn-info"
+              class="ml-2 btn"
+              href="#know-how-link"
+              >KNOW HOW</a
+            >
+          </div>
+        </div>
+      </section>
+      <span id="about-link"></span>
+
+      <article class="article-sec" id="article">
+        <span id="about-link"></span>
+        <div class="container infoc d-md-flex justify-content-center">
+          <div id="articleinfo" class="para1">
+            <h1>You create, we do the rest!</h1>
+            <img
+              class="col col-md-3 float-left"
+              src="Pics/girl-drawing.jpg"
+              alt="artist"
+            />
+            <p>
+              Photographers, painters, video-art artist, $4ART is here for you.
+              Finely there is a company who will take you step further and lead
+              you into professional buisness field. We grown out of need for
+              artist simply to stay in artistic field. Many young artist who
+              finished their art studies have a huge pile of valuable art works
+              that no body sees anymore exept their dust shelfs. We in $4ART
+              help those people who prefer to sell their work instead of just
+              collect it in the corner, after all its been made in hard and long
+              way. Contemporary art is the art of today, produced in the second
+              half of the 20th century or in the 21st century. Contemporary
+              artists work in a globally influenced, culturally diverse, and
+              technologically advancing world. Their art is a dynamic
+              combination of materials, methods, concepts, and subjects that
+              continue the challenging of boundaries that was already well
+              underway in the 20th century. Diverse and eclectic, contemporary
+              art as a whole is distinguished by the very lack of a uniform,
+              organising principle, ideology, or "-ism". Contemporary art is
+              part of a cultural dialogue that concerns larger contextual
+              frameworks such as personal and cultural identity, family,
+              community, and nationality. All of those people who want to buy
+              original gift, one of its kind may find it here. Instead of going
+              to huge galleries where artworks are priced above of ten
+              thousands. $4ART helps dozens of artist to fulfill their dream,
+              and get paid for their hard work.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <span id="know-how-link"></span>
+
+      <section class="carusele-sec">
+        <div class="container-fluid row p-1 m-0">
+          <aside class="banner col col-md-12 col-lg-3">
+            <blockquote class="quote-card">
+              $4ART its a first of the kind in online art-works selling company.
+              I been stocking my hard made photos on the shelf for years now.
+              Thats changed! $4ART found me the way that actualy i may get
+              income from the field i want to be in. Thaks to $4ART ny works
+              became demanded and i turned to be a polular artist.
+
+              <cite>
+                <span id="know-how-link2"></span>
+                <img src="Pics/mansmiles.jpg" alt="John Wetton" /> John Wetton
+              </cite>
+            </blockquote>
+          </aside>
+          <!-- /////CARUSEL START -->
+
+          <div id="id-carousele" class="col-lg-6">
+            <div class="inner p-0 col-12">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div
+                    class="carousel-item active"
+                    style="background-image: url(Pics/carusel2.jpg)"
+                  >
+                    <div>
+                      <div>
+                        <p><span>STEP 1:</span> MAKE YOUR MASTERPICE.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="carousel-item"
+                    style="background-image: url(Pics/love.jpg)"
+                  >
+                    <div>
+                      <div>
+                        <p><span>STEP 2:</span> SEND IT TO US.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="carousel-item"
+                    style="background-image: url(Pics/aucticion.jpg)"
+                  >
+                    <div>
+                      <div>
+                        <p><span>STEP 3:</span> IT GOES TO AUCTION.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="carousel-item"
+                    style="background-image: url(Pics/pictures.jpg)"
+                  >
+                    <div>
+                      <div>
+                        <p>SOLD!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <aside class="banner col col-md-12 col-lg-3">
+            <blockquote class="quote-card">
+              Truely it's the fastest and easy way to sell your works online. At
+              first i was sceptical. Keeped my works only to close friends
+              circle, Ive been considered that my work not match high level
+              criteria for serious buyers but it changed quickly when $4ART sold
+              my paintings serie on auction. Godd Job $4ART!!
+
+              <cite>
+                <img src="Pics/woman-smiles.jpg" alt="Alberta Annie" /> Alberta
+                Annie
+              </cite>
+            </blockquote>
+          </aside>
+        </div>
+      </section>
+      <section id="faq-sec-link" class="faq-sec">
+        <div class="faq-sec-title">
+          <h2 class="h1">Questions?</h2>
+        </div>
+        <div class="container-fluid center-default">
+          <div
+            class="container row d-flex justify-content-md-between align-items-md-center px-1"
+          >
+            <div class="faq-div col-sm-12 col-md-8">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        How I send my work to you?
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      You may use local Post office or DHL servises for fast
+                      delivering of your ArtWorks.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        How I get the money from selling my artwork?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      At the begining of your procces we will send you special
+                      form you need to fill. this form will contain indification
+                      ditails, your bank account and agreement between you and
+                      us.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Any extra charges?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      In case your artwork is sold you get the payment. We
+                      charge 20% of the final sell price, other 80% goes
+                      directly to you.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        What happens if my Artwork isn't sold?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      In case your artwork did not sold on this auction we will
+                      put it again on next auction but this time ww will charge
+                      you 40% of final price.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-100 faq-side-pic col-sm-12 col-md-4 center-default pt-3 px-0"
+            >
+              <figure>
+                <img
+                  class="w-100"
+                  src="Pics/color-face-girl.jpg"
+                  alt="black and white photo"
+                />
+
+                <figcaption>
+                  Oil on paper, by: Roberto Morelli. Current Price:
+                  <strong> 1090$</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <span id="gallery-sec-link"></span>
+      <section>
+        <div class="container-fluid">
+          <div class="galery-title w-100 text-center pt-5">
+            <h2 class="h1">Works on the RUN.</h2>
+          </div>
+          <div class="gallery mt-5"></div>
+          <div id="video-open">
+            <div class="gallery2 mt-3">
+              <div style="padding: 56.25% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/123234110?title=0&byline=0&portrait=0"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+
+              <div style="padding: 56.25% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/24153714?title=0&byline=0&portrait=0"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+              <div style="padding: 56.25% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/61179431?title=0&byline=0&portrait=0"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+
+              <div style="padding: 56.25% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/13817392?title=0&byline=0&portrait=0"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+      <span id="contact-sec-link"></span>
+      <section class="section-padding section-dark">
+        <div class="container">
+          <div class="contact-title w-100 text-center pt-5">
+            <h2 class="h1">Contact Us</h2>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <!-- Section Titile -->
+              <div
+                class="col-md-12 wow animated fadeInLeft"
+                data-wow-delay=".2s"
+              ></div>
+            </div>
+            <div class="row">
+              <!-- Section Titile -->
+              <div
+                class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft"
+                data-wow-delay=".2s"
+              >
+                <p>
+                  If you ever dreamed to be well known artist? Making your own
+                  exhibition and turn your creations to a valuable works? We are
+                  here for you. $4ART work with us today.
+                </p>
+
+                <div class="find-widget">Company: <a href="#top">$4ART</a></div>
+                <div class="find-widget">
+                  Address: <a href="#">86194 Rechovot Smadar Avenue 19 </a>
+                </div>
+                <div class="find-widget">
+                  Phone: <a href="#">+972 054-459-8269</a>
+                </div>
+
+                <div class="find-widget">
+                  Website: <a href="#top">www.$4ART.com</a>
+                </div>
+                <div class="find-widget">
+                  Program: <a href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
+                </div>
+              </div>
+              <!-- contact form -->
+              <div
+                class="col-md-6 wow animated fadeInRight"
+                data-wow-delay=".2s"
+              >
+                <form
+                  class="shake"
+                  role="form"
+                  method="post"
+                  id="contactForm"
+                  name="contact-form"
+                  data-toggle="validator"
+                >
+                  <!-- Name -->
+                  <div class="form-group label-floating">
+                    <label class="control-label" for="name">Name</label>
+                    <input
+                      class="form-control"
+                      id="name"
+                      type="text"
+                      name="name"
+                      required
+                      data-error="Please enter your name"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <!-- email -->
+                  <div class="form-group label-floating">
+                    <label class="control-label" for="email">Email</label>
+                    <input
+                      class="form-control"
+                      id="email"
+                      type="email"
+                      name="email"
+                      required
+                      data-error="Please enter your Email"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <!-- Subject -->
+                  <div class="form-group label-floating">
+                    <label class="control-label">Subject</label>
+                    <input
+                      class="form-control"
+                      id="msg_subject"
+                      type="text"
+                      name="subject"
+                      required
+                      data-error="Please enter your message subject"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-group label-floating">
+                    <label for="message" class="control-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      id="message"
+                      name="message"
+                      required
+                      data-error="Write your message"
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <!-- Form Submit -->
+                  <div class="form-submit mt-5">
+                    <button
+                      class="btn btn-light"
+                      type="submit"
+                      id="form-submit"
+                    >
+                      <i class="material-icons mdi mdi-message-outline"></i>
+                      Send Message
+                    </button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="id-footer" class="container">
+        <div
+          class="up row d-md-flex justify-content-md-between font-weight-lighter pt-5"
+        >
+          <div class="w-50 adress col-sm-6 col-md-4">
+            <h4>S4ART</h4>
+            <p>Smadar Avenue 19</p>
+            <p>Rehovot 86194</p>
+            <p>Israel</p>
+          </div>
+          <div class="w-50 contact col-sm-6 col-md-4">
+            <h4>CONTACT</h4>
+            <p>E-MAIL: insanie232@gmail.com</p>
+            <p>TEL: 054-459-8269</p>
+          </div>
+          <div class="w-50 social-icons col-md-4">
+            <h4>SOCIAL</h4>
+            <a href="">
+              <i id="ifacebook" class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+            <a data-color="yellow" href=""
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="down text-center p-1">
+          <p>S4ART All Rights Reserved. 2021</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
